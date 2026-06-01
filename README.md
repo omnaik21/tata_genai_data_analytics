@@ -147,10 +147,14 @@ Additional techniques:
 ## Installation
 
 bash git clone https://github.com/omnaik21/tata_genai_data_analytics.git 
+
 cd tata_genai_data_analytics 
-python -m venv venv  source venv/bin/activate     
-# macOS/Linux # or venv\Scripts\activate        
-# Windows  pip install -r requirements.txt 
+
+python -m venv venv  source venv/bin/activate   
+
+macOS/Linux  or venv\Scripts\activate
+
+ Windows  pip install -r requirements.txt 
 
 ---
 
