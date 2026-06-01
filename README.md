@@ -45,13 +45,6 @@ The analysis was conducted on a customer credit portfolio containing:
 - Geographic attributes
 - Delinquency target variable
 
----
-
-## Project Structure
-
-text tata_genai_data_analytics/ │ ├── data/ │   ├── raw/ │   ├── processed/ │   └── synthetic/ │ ├── notebooks/ │   ├── 01_EDA_risk_profiling.ipynb │   └── 02_delinquency_prediction_model.ipynb │ ├── reports/ │   ├── figures/ │   ├── EDA_Summary_Report.docx │   ├── Predictive_Modeling_Plan.docx │   └── Collections_Strategy_Report.docx │ ├── resources/ ├── src/ ├── requirements.txt └── README.md 
-
----
 
 ## Methodology
 
