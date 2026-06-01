@@ -1,152 +1,193 @@
-# 🏦 Tata iQ × Geldium Finance — GenAI Powered Data Analytics
+# 🏦 Tata iQ × Geldium Finance — GenAI-Powered Delinquency Risk Analytics
 
-![Python](https://img.shields.io/badge/Python-3.11-blue)
-![Scikit-Learn](https://img.shields.io/badge/ScikitLearn-1.3-orange)
-![Status](https://img.shields.io/badge/Status-Completed-green)
-![Forage](https://img.shields.io/badge/Forage-Tata%20iQ-red)
+## Overview
 
-## 📌 Project Overview
+This project was completed as part of the Tata iQ GenAI Powered Data Analytics Virtual Experience Program on Forage.
 
-An end-to-end AI-powered delinquency prediction and collections 
-strategy system built for Geldium Finance as part of the 
-**Tata iQ GenAI Powered Data Analytics Job Simulation** on Forage.
+The objective was to support Geldium Finance in identifying customers at risk of credit card delinquency, designing predictive analytics solutions, and developing AI-assisted collection strategies that improve operational efficiency while maintaining responsible AI practices.
 
-As an AI Transformation Consultant, I analysed customer credit card 
-data, built a predictive ML model, generated GenAI-powered 
-intervention recommendations, and designed a responsible AI 
-collections system — delivering all findings to Geldium's 
-Head of Collections.
+The project combines exploratory data analysis, predictive modeling, business intelligence, and GenAI-driven decision support to demonstrate how data analytics can be applied to real-world financial risk management.
 
 ---
 
-## 🗂️ Project Structure
-tata_genai_data_analytics/
-│
-├── data/
-│   ├── raw/                  # Original dataset (not tracked)
-│   ├── processed/            # Cleaned dataset
-│   └── synthetic/            # Synthetic data (if generated)
-│
-├── notebooks/
-│   ├── 01_EDA_risk_profiling.ipynb
-│   └── 02_delinquency_prediction_model.ipynb
-│
-├── reports/
-│   ├── figures/              # All saved charts and visualisations
-│   ├── EDA_Summary_Report_Geldium_OmNaik.docx
-│   ├── Task2_Predictive_Modeling_Plan_OmNaik.docx
-│   └── Task3_Collections_Strategy_Report_OmNaik.docx
-│
-├── resources/                # Reference files and templates
-├── src/                      # Utility functions
-├── requirements.txt
-└── README.md
+## Business Problem
+
+Geldium Finance faced increasing credit card delinquency rates and required a proactive approach to:
+
+- Identify high-risk customers before default occurs
+- Improve collection prioritization
+- Reduce financial exposure
+- Enable data-driven decision making
+- Implement responsible AI-assisted collection workflows
 
 ---
 
-## 📋 Tasks Completed
+## Project Objectives
 
-### ✅ Task 1 — Exploratory Data Analysis & Risk Profiling
-- Audited 500-customer financial dataset across 19 features
-- Identified and resolved 6 data quality issues
-- Discovered 16% delinquency rate — 3× industry average
-- Built risk profiling across Employment, Card Type & Location segments
-- **Deliverable:** EDA Summary Report (.docx)
-
-### ✅ Task 2 — Predictive Modeling Plan
-- Compared Logistic Regression, Random Forest & Gradient Boosting
-- Applied SMOTE to correct 5.2:1 class imbalance
-- Optimised decision threshold for maximum Recall (1.0)
-- Conducted fairness analysis across demographic segments
-- **Deliverable:** Predictive Modeling Plan (.docx)
-
-### ✅ Task 3 — GenAI-Powered Stakeholder Recommendations
-- Translated ML findings into plain-language executive report
-- Built SMART intervention recommendation for Collections team
-- Designed P1–P4 risk-tiered outreach framework
-- Documented responsible AI ethics and bias mitigation strategy
-- **Deliverable:** Collections Strategy Report (.docx)
-
-### ✅ Task 4 — AI System Design & Executive Briefing
-- Designed end-to-end agentic AI collections system
-- Defined autonomous vs. human-in-the-loop decision boundaries
-- Built responsible AI guardrails framework
-- Projected $1.9M+ in protected loan balance
-- **Deliverable:** Executive PowerPoint (.pptx)
+- Analyze customer credit behavior and risk indicators
+- Identify key drivers of delinquency
+- Build predictive models for risk classification
+- Generate business-focused intervention recommendations
+- Design an AI-enabled collections framework
+- Ensure fairness, transparency, and responsible AI governance
 
 ---
 
-## 📊 Key Findings
+## Dataset Summary
 
-| Metric | Value |
-|---|---|
-| Portfolio Delinquency Rate | 16% (3× industry avg) |
-| Highest Risk Segment | Business Cards — 21.3% |
-| Highest Risk Location | Los Angeles — 19.6% |
-| Model Recall | 1.0 (zero delinquents missed) |
-| Best Model AUC | 0.41 (Gradient Boosting) |
-| Loan Balance at Risk | $1.9M+ |
-| Class Imbalance Ratio | 5.2:1 |
+The analysis was conducted on a customer credit portfolio containing:
 
----
-
-## 🛠️ Tech Stack
-
-| Category | Tools |
-|---|---|
-| Language | Python 3.11 |
-| Data Processing | pandas, numpy |
-| Visualisation | matplotlib, seaborn |
-| Machine Learning | scikit-learn, imbalanced-learn |
-| Boosting | GradientBoostingClassifier |
-| Imbalance Handling | SMOTE |
-| Reporting | python-docx |
-| Presentation | pptxgenjs |
-| Environment | Jupyter Notebook, VS Code |
+- 500 customer records
+- 19 financial and demographic features
+- Credit utilization metrics
+- Payment behavior indicators
+- Employment information
+- Geographic attributes
+- Delinquency target variable
 
 ---
 
-## ⚙️ Setup & Installation
+## Project Structure
 
-```bash
-# Clone the repository
-git clone https://github.com/YOUR_USERNAME/tata-genai-data-analytics.git
-cd tata-genai-data-analytics
-
-# Create virtual environment
-python3.11 -m venv venv
-source venv/bin/activate        # Mac/Linux
-venv\Scripts\activate           # Windows
-
-# Install dependencies
-pip install -r requirements.txt
-```
+text tata_genai_data_analytics/ │ ├── data/ │   ├── raw/ │   ├── processed/ │   └── synthetic/ │ ├── notebooks/ │   ├── 01_EDA_risk_profiling.ipynb │   └── 02_delinquency_prediction_model.ipynb │ ├── reports/ │   ├── figures/ │   ├── EDA_Summary_Report.docx │   ├── Predictive_Modeling_Plan.docx │   └── Collections_Strategy_Report.docx │ ├── resources/ ├── src/ ├── requirements.txt └── README.md 
 
 ---
 
-## 📈 Results Summary
+## Methodology
 
-The analysis confirmed that Geldium's delinquency challenge cannot 
-be solved by single-metric rules. A Gradient Boosting model with 
-SMOTE oversampling successfully identified all delinquent customers 
-(Recall=1.0), providing the Collections team with a ranked risk 
-score list for targeted outreach — replacing manual, reactive 
-case handling with a proactive, data-driven intervention system.
+### Phase 1 — Exploratory Data Analysis
+
+- Data quality assessment
+- Missing value analysis
+- Risk segmentation
+- Delinquency distribution analysis
+- Customer behavior profiling
+- Business insight generation
+
+### Phase 2 — Predictive Modeling
+
+Models evaluated:
+
+- Logistic Regression
+- Random Forest
+- Gradient Boosting
+
+Additional techniques:
+
+- Feature engineering
+- Class imbalance treatment using SMOTE
+- Threshold optimization
+- Fairness assessment
+- Cross-validation
+
+### Phase 3 — Business Recommendations
+
+- Risk-based customer segmentation
+- Collection prioritization framework
+- Intervention planning
+- Executive-level recommendations
+
+### Phase 4 — AI System Design
+
+- Agentic AI collections workflow
+- Human-in-the-loop decision controls
+- Responsible AI guardrails
+- Bias mitigation strategy
+- Governance recommendations
 
 ---
 
-## 🔗 Certificate
+## Key Findings
 
-[Tata iQ GenAI Powered Data Analytics — Forage Certificate](YOUR_CERTIFICATE_LINK)
+| Metric | Result |
+|----------|----------|
+| Delinquency Rate | 16.0% |
+| Class Imbalance | 5.2 : 1 |
+| Highest Risk Card Segment | Business Card Holders |
+| Highest Risk Location | Los Angeles |
+| Model Recall | 1.00 |
+| Estimated Balance at Risk | $1.9M+ |
+
+### Business Insights
+
+- Delinquency levels significantly exceeded industry benchmarks.
+- Certain customer segments demonstrated substantially higher risk exposure.
+- Predictive modeling enabled proactive intervention before default events.
+- AI-assisted prioritization can improve collection efficiency and resource allocation.
 
 ---
 
-## 👤 Author
+## Technology Stack
 
-**Om Naik** — AI Transformation Consultant  
-[LinkedIn](YOUR_LINKEDIN_URL) · [GitHub](YOUR_GITHUB_URL)
+### Programming
+
+- Python 3.11
+
+### Data Analysis
+
+- Pandas
+- NumPy
+- SciPy
+
+### Visualization
+
+- Matplotlib
+- Seaborn
+
+### Machine Learning
+
+- Scikit-Learn
+- Imbalanced-Learn
+- Gradient Boosting
+- Random Forest
+- Logistic Regression
+- SMOTE
+
+### Reporting & Documentation
+
+- Jupyter Notebook
+- Python-Docx
+- PowerPoint
 
 ---
 
-*This project was completed as part of the Tata iQ Job Simulation 
-on Forage. Dataset provided by Forage for educational purposes.*
+## Installation
+
+bash git clone https://github.com/your-username/tata_genai_data_analytics.git  cd tata_genai_data_analytics  python -m venv venv  source venv/bin/activate      # macOS/Linux # or venv\Scripts\activate         # Windows  pip install -r requirements.txt 
+
+---
+
+## Results & Impact
+
+The project demonstrates how predictive analytics and GenAI-assisted decision support can transform traditional collections operations into a proactive risk management framework.
+
+Key outcomes include:
+
+- Early identification of delinquent customers
+- Improved collection prioritization
+- Reduced portfolio risk exposure
+- Responsible AI governance integration
+- Actionable executive-level business recommendations
+
+---
+
+## Certification
+
+Completed through the Tata iQ GenAI Powered Data Analytics Virtual Experience Program hosted on Forage.
+
+Certificate available upon request.
+
+---
+
+## Author
+
+### Om Naik
+
+Data Analytics | Machine Learning | GenAI
+
+- LinkedIn: [Add Your LinkedIn URL]
+- GitHub: [Add Your GitHub URL]
+
+---
+
+This project was completed for educational and professional development purposes as part of the Tata iQ Virtual Experience Program on Forage.
