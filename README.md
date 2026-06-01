@@ -153,7 +153,11 @@ Additional techniques:
 
 ## Installation
 
-bash git clone https://github.com/omnaik21/tata_genai_data_analytics.git cd tata_genai_data_analytics  python -m venv venv  source venv/bin/activate      # macOS/Linux # or venv\Scripts\activate         # Windows  pip install -r requirements.txt 
+bash git clone https://github.com/omnaik21/tata_genai_data_analytics.git 
+cd tata_genai_data_analytics 
+python -m venv venv  source venv/bin/activate     
+# macOS/Linux # or venv\Scripts\activate        
+# Windows  pip install -r requirements.txt 
 
 ---
 
@@ -185,8 +189,8 @@ Certificate available upon request.
 
 Data Analytics | Machine Learning | GenAI
 
-- LinkedIn: [Add Your LinkedIn URL]
-- GitHub: [Add Your GitHub URL]
+- LinkedIn: https://www.linkedin.com/in/omnaik21/
+- GitHub: https://github.com/omnaik21
 
 ---
 
